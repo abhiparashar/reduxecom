@@ -31,7 +31,11 @@ const ProductDetail = () => {
   return (
     <div className="ui grid container">
       {Object.keys(product).length === 0 ? (
-        <div>Loading....</div>
+        <div className="ui segment">
+            <div className="ui active dimmer">
+            <div class="ui big text loader">Loading</div>
+            </div>
+        </div>
       ) : (
         <div className="ui placeholder segment">
           <div className="ui two column stackable center aligned grid">
